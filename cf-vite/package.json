@@ -1,0 +1,45 @@
+{
+  "name": "cf-vite",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "CF Vite environment plugin",
+  "keywords": [
+    "Clouflare",
+    "Vite",
+    "Development",
+    "Environment",
+    "Plugin"
+  ],
+  "author": "Jacob Ebey <jacob.ebey@live.com>",
+  "license": "ISC",
+  "files": [
+    "dist"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    },
+    "./package.json": "./package.json"
+  },
+  "scripts": {
+    "build": "tsup --clean",
+    "dev": "tsup --watch"
+  },
+  "peerDependencies": {
+    "wrangler": ">=3.61.0",
+    "vite": "6.0.0-alpha.18"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240620.0",
+    "@types/node": "20.14.7",
+    "tsup": "8.1.0",
+    "typescript": "5.5.2",
+    "vite": "6.0.0-alpha.18"
+  },
+  "dependencies": {
+    "@hattip/adapter-node": "0.0.46",
+    "miniflare": "3.20240610.1",
+    "wrangler": "3.61.0"
+  }
+}

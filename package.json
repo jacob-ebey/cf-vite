@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "scripts": {
+    "build": "pnpm --recursive build",
+    "test": "node --test test.js"
+  },
+  "devDependencies": {
+    "vite": "6.0.0-alpha.18"
+  },
+  "pnpm": {
+    "overrides": {
+      "vite": "6.0.0-alpha.18"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "vite build --app",
+    "dev": "vite dev"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "4.20240620.0",
+    "@types/node": "20.14.7",
+    "cf-vite": "workspace:*",
+    "typescript": "5.5.2",
+    "vite": "6.0.0-alpha.18",
+    "wrangler": "3.61.0"
+  }
+}
