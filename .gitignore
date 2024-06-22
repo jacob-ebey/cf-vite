@@ -2,4 +2,5 @@
 .mf
 dist
 node_modules
+log.txt
 vite.config.ts.timestamp-*
